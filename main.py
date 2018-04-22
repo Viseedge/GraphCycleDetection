@@ -35,10 +35,10 @@ class Graph():
                 self.search(neighbor, cyclic, state, searched) #if neighbor hasn't been searched, repeat search until cycle is found or ends
 
 graph1 = Graph([[1,4], [0,2], [0,1,3,4], [2,4], [2,3]])
-print(graph1.is_cyclic())
+print(graph1.is_cyclic()) #returns true
 
 graph2 = Graph([[1], [0,2,3,5], [1], [1,4], [3,5], [1,4] ])
-print(graph2.is_cyclic())
+print(graph2.is_cyclic()) #returns true
 
 graph3 = Graph([[1,2], [2], []])
-print(graph3.is_cyclic())
+print(graph3.is_cyclic()) #returns false
